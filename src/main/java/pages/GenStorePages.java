@@ -21,15 +21,14 @@ public class GenStorePages extends GenstoreUtils {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(id="com.androidsample.generalstore:id/spinnerCountry")
-	public WebElement Country;
 	
-	//jump to country , canada
-	@AndroidFindBy()
-	public WebElement Canada;
+	
+	@AndroidFindBy(id="com.androidsample.generalstore:id/spinnerCountry")
+	public WebElement country;
+	
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/nameField")
-	public WebElement NameField;
+	public WebElement nameField;
 
 	
 	
@@ -42,8 +41,10 @@ public class GenStorePages extends GenstoreUtils {
 		ele.click();
 	}
 	
+	
 	public String getText(WebElement ele) {
 		return ele.getText();
 	}
 	
 }
+

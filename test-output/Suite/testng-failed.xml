@@ -8,6 +8,7 @@
           <include name="login"/>
           <include name="teardown"/>
           <include name="startServerAndApp"/>
+          <include name="Test"/>
         </methods>
       </class> <!-- test.GenStoreLogin -->
     </classes>
