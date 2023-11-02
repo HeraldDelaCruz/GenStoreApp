@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 03 01:49:57 SGT 2023</td>
+<td>Started on:</td><td>Fri Nov 03 02:22:58 SGT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9769 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6712 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,23 +77,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.GenStoreLogin.login()'><b>login</b><br>Test class: test.GenStoreLogin</td>
-<td><div><pre>java.lang.IllegalArgumentException: @$Proxy12: one of [uiAutomator, accessibility, accessibility, className, id, tagName, name, xpath, linkText, partialLinkText, windowsAutomation, iOSClassChain, androidDataMatcher, androidViewMatcher, iOSNsPredicate] should be filled
-	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.lambda$getFilledValue$4(AppiumByBuilder.java:103)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.getFilledValue(AppiumByBuilder.java:102)
-	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.createBy(AppiumByBuilder.java:141)
-	at io.appium.java_client.pagefactory.DefaultElementByBuilder.getBys(DefaultElementByBuilder.java:133)
-	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildMobileNativeBy(DefaultElementByBuilder.java:170)
-	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildBy(DefaultElementByBuilder.java:204)
-	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:93)
-	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:79)
-	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:34)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:186)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
-	at pages.GenStorePages.&lt;init&gt;(GenStorePages.java:21)
-	at test.GenStoreLogin.login(GenStoreLogin.java:17)
+<td><div><pre>java.lang.NullPointerException: Cannot read field &quot;NameField&quot; because &quot;this.genstorepages&quot; is null
+	at test.GenStoreLogin.login(GenStoreLogin.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -122,24 +107,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace189970261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace189970261'><pre>java.lang.IllegalArgumentException: @$Proxy12: one of [uiAutomator, accessibility, accessibility, className, id, tagName, name, xpath, linkText, partialLinkText, windowsAutomation, iOSClassChain, androidDataMatcher, androidViewMatcher, iOSNsPredicate] should be filled
-	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.lambda$getFilledValue$4(AppiumByBuilder.java:103)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.getFilledValue(AppiumByBuilder.java:102)
-	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.createBy(AppiumByBuilder.java:141)
-	at io.appium.java_client.pagefactory.DefaultElementByBuilder.getBys(DefaultElementByBuilder.java:133)
-	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildMobileNativeBy(DefaultElementByBuilder.java:170)
-	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildBy(DefaultElementByBuilder.java:204)
-	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:93)
-	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:79)
-	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:34)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
-	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:186)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
-	at pages.GenStorePages.&lt;init&gt;(GenStorePages.java:21)
-	at test.GenStoreLogin.login(GenStoreLogin.java:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace358847552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace358847552'><pre>java.lang.NullPointerException: Cannot read field &quot;NameField&quot; because &quot;this.genstorepages&quot; is null
+	at test.GenStoreLogin.login(GenStoreLogin.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,21 +140,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.GenStoreLogin@36fc695d</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test.GenStoreLogin.test()'><b>test</b><br>Test class: test.GenStoreLogin</td>
-<td></td>
-<td>0</td>
-<td>test.GenStoreLogin@36fc695d</td></tr>
+<td>test.GenStoreLogin@2b71e916</td></tr>
 </table><p>
 </body>
 </html>

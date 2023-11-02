@@ -54,7 +54,7 @@ public class GenStoreBaseClass {
 			driver=new AndroidDriver(new URL(appiumUrl),options);
 			
 			genstorepages= new GenStorePages(driver);
-			
+			//test git commit
 		}
 
 		catch (Exception e) 
