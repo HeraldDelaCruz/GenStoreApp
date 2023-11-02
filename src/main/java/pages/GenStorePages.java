@@ -16,7 +16,7 @@ public class GenStorePages extends GenstoreUtils {
 	
 	public GenStorePages (AndroidDriver driver) {
 		
-		
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}

@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-03T02:46:27 SGT" name="Default suite" finished-at="2023-11-03T02:46:33 SGT" duration-ms="5889">
+  <suite started-at="2023-11-03T03:40:00 SGT" name="Default suite" finished-at="2023-11-03T03:40:05 SGT" duration-ms="5411">
     <groups>
     </groups>
-    <test started-at="2023-11-03T02:46:27 SGT" name="Default test" finished-at="2023-11-03T02:46:33 SGT" duration-ms="5889">
+    <test started-at="2023-11-03T03:40:00 SGT" name="Default test" finished-at="2023-11-03T03:40:05 SGT" duration-ms="5411">
       <class name="test.GenStoreLogin">
-        <test-method is-config="true" signature="startServerAndApp()[pri:0, instance:test.GenStoreLogin@2b71e916]" started-at="2023-11-03T02:46:27 SGT" name="startServerAndApp" finished-at="2023-11-03T02:46:32 SGT" duration-ms="5519" status="PASS">
+        <test-method is-config="true" signature="startServerAndApp()[pri:0, instance:test.GenStoreLogin@2b71e916]" started-at="2023-11-03T03:40:00 SGT" name="startServerAndApp" finished-at="2023-11-03T03:40:05 SGT" duration-ms="5162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startServerAndApp -->
-        <test-method signature="login()[pri:0, instance:test.GenStoreLogin@2b71e916]" started-at="2023-11-03T02:46:32 SGT" name="login" finished-at="2023-11-03T02:46:32 SGT" duration-ms="4" status="FAIL">
+        <test-method signature="login()[pri:0, instance:test.GenStoreLogin@2b71e916]" started-at="2023-11-03T03:40:05 SGT" name="login" finished-at="2023-11-03T03:40:05 SGT" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot read field "NameField" because "this.genstorepages" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot read field "NameField" because "this.genstorepages" is null
-at test.GenStoreLogin.login(GenStoreLogin.java:14)
+at test.GenStoreLogin.login(GenStoreLogin.java:13)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,7 +53,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.GenStoreLogin@2b71e916]" started-at="2023-11-03T02:46:32 SGT" name="teardown" finished-at="2023-11-03T02:46:33 SGT" duration-ms="325" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.GenStoreLogin@2b71e916]" started-at="2023-11-03T03:40:05 SGT" name="teardown" finished-at="2023-11-03T03:40:05 SGT" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

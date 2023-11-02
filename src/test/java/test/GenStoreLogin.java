@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 public class GenStoreLogin extends GenStoreBaseClass {
 	
-
 	@Test
 	public void login () {
 		
@@ -16,7 +15,6 @@ public class GenStoreLogin extends GenStoreBaseClass {
 		
 		//Thread.sleep(1000);
 		//AndroidUtility.scrollDown();
-		//AndroidUtility.scollToText("WebView");
 		//AndroidUtility.scollToText();
 		
 	}
