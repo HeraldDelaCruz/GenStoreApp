@@ -11,7 +11,7 @@ public class GenStoreAddtoCart extends GenStoreBaseClass {
 	
 	@Test
 	public void getShoeNamesandCount () throws Throwable {
-		//3. Scrolling in product list
+		//4. Add to Card and Verify
 		
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		genstorepages.appLoading(); 
