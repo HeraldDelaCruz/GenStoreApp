@@ -3,14 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.GenStoreLogin">
+      <class name="genStoreTest.GenStoreAddtoCart">
         <methods>
-          <include name="login"/>
           <include name="teardown"/>
           <include name="startServerAndApp"/>
-          <include name="Test"/>
+          <include name="getShoeNamesandCount"/>
         </methods>
-      </class> <!-- test.GenStoreLogin -->
+      </class> <!-- genStoreTest.GenStoreAddtoCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

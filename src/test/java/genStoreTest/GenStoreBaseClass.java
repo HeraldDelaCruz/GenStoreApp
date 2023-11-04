@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -27,7 +29,7 @@ public class GenStoreBaseClass {
 
 	public AndroidDriver driver;
 
-	@BeforeTest
+	@BeforeClass
 	public void startServerAndApp() throws NullPointerException, IOException {
 		
 		Properties properties = new Properties();
@@ -54,15 +56,11 @@ public class GenStoreBaseClass {
 		genstorepages = new GenStorePages(driver);
 	}
 
-	@Test
-	public void test() {
 
-	}
-
-	@AfterTest
+	@AfterClass
 	public void teardown() {
-		System.out.print("Test Close");
-		driver.quit();
+		System.out.print("Test done");
+		//driver.close();
 	}
 
 }

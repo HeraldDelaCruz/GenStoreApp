@@ -1,12 +1,12 @@
 package genStoreTest;
 
 import org.testng.annotations.Test;
-
-public class GenStoreLogin extends GenStoreBaseClass {
+import genstoreUtility.GenstoreUtils;
+public class GenStoreScrolltoProduct extends GenStoreBaseClass {
 	
 	@Test
-	public void login () throws InterruptedException {
-		// 1. Test Case in Filling the form details for shopping 
+	public void getShoeNamesandCount () throws InterruptedException {
+		//3. Scrolling in product list
 		
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		genstorepages.appLoading(); 
@@ -20,7 +20,7 @@ public class GenStoreLogin extends GenStoreBaseClass {
 		genstorepages.enterUsersname(genstorepages.nameField);
 		
 		//setup gender to female
-		genstorepages.clickOnElement(genstorepages.femalebtn);
+		//genstorepages.clickOnElement(genstorepages.femalebtn);
 		
 		//hide keyboard
 		genstorepages.hideKeyboard();
@@ -28,8 +28,14 @@ public class GenStoreLogin extends GenStoreBaseClass {
 		//submit
 		genstorepages.clickOnElement(genstorepages.loginbtn);
 		
+		Thread.sleep(1000);
 		
-		System.out.print("Test 1 : Complete");
+		//GenstoreUtils.scollToText("Nike SFB Jungle");
+		GenstoreUtils.scrollDown();
+		
+		genstorepages.getShoeNamesandCount();
+		
+		System.out.print("Test 3 : Complete");
 		
 	}
 }

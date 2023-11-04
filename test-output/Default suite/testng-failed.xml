@@ -5,9 +5,9 @@
     <classes>
       <class name="genStoreTest.GenStoreLogin">
         <methods>
-          <include name="startServerAndApp"/>
           <include name="login"/>
           <include name="teardown"/>
+          <include name="startServerAndApp"/>
         </methods>
       </class> <!-- genStoreTest.GenStoreLogin -->
     </classes>

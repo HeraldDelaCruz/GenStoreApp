@@ -3,7 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.GenStoreLogin"/>
+      <class name="genStoreTest.GenStoreLogin"/>
+      <class name="genStoreTest.GenStoreErrorValidation"/>
+      <class name="genStoreTest.GenStoreAddtoCart"/>
+      <class name="genStoreTest.GenStoreScrolltoProduct"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
